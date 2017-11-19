@@ -36,8 +36,8 @@ export default class Graph extends React.Component {
         return(
             <div className="line-chart">
                 <LineChart width={312} height={200} data={plotData}>
-                    <XAxis dataKey={xAxisDataKey ? xAxisDataKey : defaultKey} stroke="#f1f3f5" />
-                    <YAxis stroke="#f1f3f5"/>
+                    <XAxis dataKey={xAxisDataKey ? xAxisDataKey : defaultKey} stroke="gray" />
+                    <YAxis stroke="gray"/>
                     <ReferenceLine y={referenceValue} stroke="#727e83" strokeDasharray="3 3">
                         <Label value={referenceValue} offset={5} position="left" stroke="#727e83"/>
                     </ReferenceLine>
